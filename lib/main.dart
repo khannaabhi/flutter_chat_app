@@ -1,10 +1,11 @@
+import 'package:all_textzz/pages/ConversationPageList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(all_textzz());
 }
 
-class MyApp extends StatelessWidget {
+class all_textzz extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -13,33 +14,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: MyHomePage(title: 'ChatZZZ'),
+      home: ConversationPageList(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text("Hello World!"),
-      ),
-    );
-  }
-}
+// https://medium.com/@adityadroid/60-days-of-flutter-day-2-setting-up-a-ci-with-flutter-8f77bebd1b86
+// https://travis-ci.com/github/khannaabhi/flutter_chat_app

@@ -12,7 +12,7 @@ import 'package:all_textzz/main.dart';
 void main() {
   testWidgets('Checking if hello world shows up', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(all_textzz());
     expect(find.text('Hello World!'), findsOneWidget);
   });
 }
