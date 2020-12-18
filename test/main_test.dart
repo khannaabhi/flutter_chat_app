@@ -6,13 +6,13 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_test/flutter_test.dart';
-
+import 'package:all_textzz/pages/ConversationPageList.dart';
 import 'package:all_textzz/main.dart';
 
 void main() {
-  testWidgets('Checking if hello world shows up', (WidgetTester tester) async {
+  testWidgets('Main ui test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(all_textzz());
-    expect(find.text('Hello World!'), findsOneWidget);
+    expect(find.byType(ConversationPageList), findsOneWidget);
   });
 }

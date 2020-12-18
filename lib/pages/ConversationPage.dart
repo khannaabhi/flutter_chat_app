@@ -4,6 +4,9 @@ import 'package:all_textzz/widgets/ChatListWidget.dart';
 import 'package:all_textzz/widgets/InputWidget.dart';
 
 class ConversationPage extends StatefulWidget {
+
+  const ConversationPage();
+
   @override
   _ConversationPageState createState() => _ConversationPageState();
 }

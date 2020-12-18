@@ -6,6 +6,8 @@ class InputWidget extends StatelessWidget {
 
   final TextEditingController textEditingController = TextEditingController();
 
+  InputWidget();
+
   @override
   Widget build(BuildContext context) {
     return Container(
