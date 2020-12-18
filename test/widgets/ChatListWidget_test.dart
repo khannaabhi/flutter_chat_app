@@ -5,7 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main(){
   testWidgets('ChatListWidget UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(all_textzz());
+    await tester.pumpWidget(AllTextzz());
 
     expect(find.byType(ListView),findsOneWidget);
   });

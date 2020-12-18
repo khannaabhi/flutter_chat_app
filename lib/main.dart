@@ -2,10 +2,10 @@ import 'package:all_textzz/pages/ConversationPageList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(all_textzz());
+  runApp(AllTextzz());
 }
 
-class all_textzz extends StatelessWidget {
+class AllTextzz extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

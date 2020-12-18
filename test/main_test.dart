@@ -12,7 +12,7 @@ import 'package:all_textzz/main.dart';
 void main() {
   testWidgets('Main ui test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(all_textzz());
+    await tester.pumpWidget(AllTextzz());
     expect(find.byType(ConversationPageList), findsOneWidget);
   });
 }
